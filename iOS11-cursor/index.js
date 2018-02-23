@@ -15,25 +15,25 @@ const removeFixStyle = () => {
 };
 
 function openModal() {
-    const node = document.getElementById('modal-shadow');
-    node.style.display = 'flex';
+  const node = document.getElementById('modal-shadow');
+  node.style.display = 'flex';
 
-    addBodyFixStyle();
+  addBodyFixStyle();
 
-    const modalContent = document.getElementsByClassName('modal-content');
-    modalContent[0].addEventListener('click', function(event) {
-        console.log('modal content click');
+  const modalContent = document.getElementsByClassName('modal-content');
+  modalContent[0].addEventListener('click', function(event) {
+    console.log('modal content click');
 
-        //禁止事件冒泡
-        event.stopPropagation();
-    });
+    //禁止事件冒泡
+    event.stopPropagation();
+  });
 }
 
 function closeModal() {
-    const node = document.getElementById('modal-shadow');
-    node.style.display = 'none';
+  const node = document.getElementById('modal-shadow');
+  node.style.display = 'none';
 
-    removeFixStyle();
+  removeFixStyle();
 }
 
 

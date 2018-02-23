@@ -13,7 +13,7 @@ Include:
 
 ## Note
 
-所有的的示例上传到gh-pages,注意在上传的时候，记得同时push to master 和 gh-pages,
+所有的的示例上传到gh-pages,注意在上传的时候，记得同时push to master 和 gh-pages
 
 ## Problem
 

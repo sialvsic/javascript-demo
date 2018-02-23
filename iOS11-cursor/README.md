@@ -11,12 +11,12 @@ Gif：
 ![iOS11-cursor-issue](http://obqvt6b56.bkt.clouddn.com/JS-Issue-ios11-cursor.gif)
 
 解决方案：
-在Modal打开时，对背景层进行锁定，同时记录背景层的滚动位置，
+在Modal打开时，对背景层进行锁定，同时记录背景层的滚动位置
 在Modal关闭时，对背景层进行解锁，重置背景层之前的位置
 
 副作用：
 在Modal打开时会发现一个有意思的事情就是滚动穿透，即：(滚动modal的同时也会影响背景层的滚动)
-使用此方案时，会附带的将背景层的滚动禁止
+使用此方案时，在打开modal时会附带的将背景层的滚动禁止
 
 ## Feature
 
