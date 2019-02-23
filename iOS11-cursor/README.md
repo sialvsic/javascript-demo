@@ -23,6 +23,9 @@ Gif：
 ## Version
 
 ## Note
+参考：
+https://hackernoon.com/how-to-fix-the-ios-11-input-element-in-fixed-modals-bug-aaf66c7ba3f8
+https://stackoverflow.com/questions/46339063/ios-11-safari-bootstrap-modal-text-area-outside-of-cursor
 
 ## Showcase
 
