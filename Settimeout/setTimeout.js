@@ -56,3 +56,4 @@ setTimeout(function() {
 setTimeout(function() {
   console.log(3);
 }, 1000);
+
