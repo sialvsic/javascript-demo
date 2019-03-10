@@ -1,4 +1,4 @@
-function deplay(time) {
+function delay(time) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log('1111');
@@ -8,8 +8,8 @@ function deplay(time) {
   })
 }
 
-deplay(1000).then(() => {
-  deplay(2000)
+delay(1000).then(() => {
+  delay(2000)
   console.log('3333');
 });
 console.log('2222');
