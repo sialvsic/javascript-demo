@@ -9,7 +9,6 @@ function _promise(fn) {
   that.resolveCallbacks = [];
   that.rejectCallbacks = [];
 
-
   function resolve(value) {
     if(that.state === 'pending') {
       that.state = 'resolve';
