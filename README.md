@@ -23,14 +23,12 @@ Include:
 
 ```
 $ git checkout -b gh-pages
-
 ```
 
 2.push代码到这个新的分支上即可
 
 ```
 $ git push origin gh-pages
-
 ```
 
 那么demo可以按照以下的方式找到
@@ -50,42 +48,36 @@ eg:
 Step 1
 ```
 $ (master)  git add
-
 ```
 
 Step 2
 
 ```
 $ (master)  git commit
-
 ```
 
 Step 3
 
 ```
 $ (master)  git push origin master
-
 ```
 
 Step 4
 
 ```
 $ (master)  git checkout gh-pages
-
 ```
 
 Step 5
 
 ```
 $ (gh-pages)  git merge master
-
 ```
 
 Step 6
 
 ```
 $ (gh-pages)  git push origin gh-pages
-
 ```
 
 
