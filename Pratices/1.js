@@ -16,7 +16,6 @@ function namespace(oNamespace, sPackage) {
   return find(oNamespace, obj.length, obj)
 }
 
-
 function find(oNamespace, length, obj) {
   console.log(oNamespace, length, obj);
 

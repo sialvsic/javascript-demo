@@ -1,5 +1,4 @@
 //小数截断
-
 function func1(value, decimalLength) {
   const factor = Math.pow(10, decimalLength);
   return Number((Math.floor(value * factor) / factor).toFixed(decimalLength));
