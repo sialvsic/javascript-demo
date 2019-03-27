@@ -52,3 +52,15 @@ new Promise((resolve, reject) => {
 }, (x) => {
   console.log(x);   // >>>> 1111
 });
+
+
+(async function () {
+  console.log(1);
+
+  await setTimeout(function() {
+      console.log(2);
+    }, 1000);
+  console.log(3);
+})();
+
+
