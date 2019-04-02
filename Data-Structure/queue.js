@@ -14,7 +14,6 @@ queue.prototype.pop = function() {
 
 //获取队首元素
 queue.prototype.front = function() {
-  console.log(this.items);
   return this.items[0]
 };
 
