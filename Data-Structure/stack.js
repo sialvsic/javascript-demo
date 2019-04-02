@@ -1,5 +1,5 @@
 function stack() {
-  let items = []
+  this.items = []
 }
 
 //进栈
@@ -24,7 +24,8 @@ stack.prototype.isEmpty = function() {
 
 //获取栈顶元素
 stack.prototype.peek = function() {
-  return this.items[this.item.length - 1];
+  console.log(this.items);
+  return this.items[this.items.length - 1];
 };
 
 //栈清空
@@ -32,7 +33,10 @@ stack.prototype.clear = function() {
   return this.items.length = 0;
 };
 
-
-
-
+let s = new stack();
+s.push(0);
+s.push(1);
+s.push(2);
+s.push(3);
+console.log(s.peek());
 

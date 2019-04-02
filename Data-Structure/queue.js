@@ -1,5 +1,5 @@
 function queue() {
-  let items = []
+  this.items = []
 }
 
 //进队
@@ -8,12 +8,13 @@ queue.prototype.push = function(item) {
 };
 
 //出队
-queue.prototype.push = function() {
+queue.prototype.pop = function() {
   return this.items.shift()
 };
 
 //获取队首元素
 queue.prototype.front = function() {
+  console.log(this.items);
   return this.items[0]
 };
 
@@ -23,17 +24,25 @@ queue.prototype.end = function() {
 };
 
 //队列大小
-stack.prototype.size = function() {
+queue.prototype.size = function() {
   return this.items.length;
 };
 
 //队列否为空
-stack.prototype.isEmpty = function() {
+queue.prototype.isEmpty = function() {
   return this.items.length === 0;
 };
 
 //队列清空
-stack.prototype.clear = function() {
+queue.prototype.clear = function() {
   return this.items.length = 0;
 };
 
+
+let q = new queue();
+q.push(0);
+q.push(1);
+q.push(2);
+q.push(3);
+console.log(q.front());
+console.log(q.end());
