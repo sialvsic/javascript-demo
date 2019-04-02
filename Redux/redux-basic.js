@@ -102,7 +102,7 @@ function middleware2(store) {
 
 applyMiddleware(middleware1, middleware2);
 
-combineReducers = function(reducers) {
+function combineReducers(reducers) {
   const availableKeys = [];
   const availableReducer = {};
   Object.keys(reducers).forEach((key) => {

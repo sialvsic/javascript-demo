@@ -55,7 +55,7 @@ function getPageSizePart() {
   }
 }
 
-//获取当前网页整体大小
+//获取当前网页整体大小(包含隐藏的可滚动部分)
 function getPageSizeTotal() {
   console.log(`当前页面整体宽${document.documentElement.offsetWidth}`);
   //or

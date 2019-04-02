@@ -3,38 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-  <title>Title</title>
+  <title>Sticky</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <div class="root">
   <header class="header">I am header</header>
   <div class="content"></div>
-  <div class="sticky">I am a sticky element</div>
+  <div class="sticky"></div>
   <footer class="footer">I am footer</footer>
 </div>
 
 </body>
 <script>
-  let height = 0;
   let stickyNode = document.getElementsByClassName('sticky')[0];
 
-  function onScroll() {
-    if(this.height !== stickyNode.getBoundingClientRect().top) {
-      console.log('I am fix');
+  function toggleSticky() {
+    if(stickyNode.getBoundingClientRect().bottom === window.innerHeight) {
+      stickyNode.innerHTML = 'I am sticky'
+    } else {
+      stickyNode.innerHTML = 'I am float'
     }
-    this.height = stickyNode.getBoundingClientRect().top;
   }
 
   window.onload = function() {
-    console.log('run once');
     window.addEventListener('scroll', () => {
-      onScroll()
+      toggleSticky()
     });
-    height = stickyNode.getBoundingClientRect().top;
+    toggleSticky()
   }
 
 </script>
 </html>
-
-<!--如何判断一个元素是否在固定-->
