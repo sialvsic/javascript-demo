@@ -1,3 +1,4 @@
+//链表 - 双向链表
 function Node(element) {
   this.element = element;
   this.next = null;
