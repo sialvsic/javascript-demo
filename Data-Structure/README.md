@@ -2,6 +2,7 @@
 - 栈
 - 队列
 - 优先队列
+- 链表
 
 ## 参考资料
 https://github.com/wengjq/Blog/issues/4
