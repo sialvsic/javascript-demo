@@ -2,7 +2,7 @@
   "name": "javascript-demo",
   "version": "1.0.0",
   "description": "这是Javascript学习过程的Demo库，每一个小的知识点建立一个文件夹，都是独立的小练习。",
-  "main": "temp.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/sialvsic/javascript-demo#readme",
   "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
     "cors": "^2.8.5",
+    "esm": "^3.2.22",
     "express": "^4.16.4",
     "lodash": "^4.17.11"
   }

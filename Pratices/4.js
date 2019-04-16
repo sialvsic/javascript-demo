@@ -1,12 +1,11 @@
 /*
 题目描述
-实现一个方法满足对于输入项的依次处理，返回一个结果
+实现一个方法满足对于输入项的依次处理，返回一个处理之后的结果
 
 输入：
 const addSquare = flow([add, square])
 
 输出：
-{ a: { test: 1, b: { c: { d: {}}}}}
 */
 
 const _ = require('lodash');

@@ -136,5 +136,4 @@ fabric.properties
 # End of https://www.gitignore.io/api/git,node,osx,webstorm
 
 .idea/
-temp.js
-temp1.js
+z-temp/*
