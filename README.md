@@ -8,8 +8,6 @@
 
 Include:
 
-- iOS11 cursor 问题 [iOS11-cursor](https://sialvsic.github.io/javascript-demo/iOS11-cursor/index.html)
-
 
 ## Note
 
