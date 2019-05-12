@@ -1,3 +1,4 @@
+console.log('b load');
 let number1 = 0;
 let number2 = 0;
 
@@ -14,9 +15,10 @@ function onClickNumber2() {
 }
 
 function fun() {
-  for(let i = 0; i < 69999; i++) {
-    console.log(i + Math.random());
+  for(let i = 0; i < 6999; i++) {
+    // console.log(i+1);
   }
 }
 
 fun();
+console.log('b load end');

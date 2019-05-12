@@ -1,3 +1,4 @@
+console.log('c load');
 function onCalculate() {
   const node1 = document.getElementsByClassName('click-number-1')[0];
   const node2 = document.getElementsByClassName('click-number-2')[0];
@@ -11,3 +12,4 @@ function onCalculate() {
 }
 
 onCalculate();
+console.log('c load end');
