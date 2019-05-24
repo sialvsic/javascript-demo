@@ -15,14 +15,13 @@ function handleDivClick(event) {
 
 }
 
-
 window.onload = () => {
   console.log('i am loaded');
 
   const node = document.querySelector('.second');
   node.onclick = (event) => {
     console.log('click the second button');
-    console.log(event.eventPhase)
+    console.log(event.eventPhase);
   };
 
   const button = document.querySelector('.third');
@@ -31,17 +30,18 @@ window.onload = () => {
     console.log(event.eventPhase);
   }, false);
 
-  document.body.addEventListener('click', function(event) {
+  const btn = document.getElementById('mybtn');
+  const handler = (event) => {
+    console.log('mybtn');
+
+    console.log(event.eventPhase);
+  };
+  btn.addEventListener('click', handler, false);
+
+  document.body.addEventListener('click', function (event) {
     console.log('document.body');
     console.log(event.eventPhase);
   });
-
-  const btn = document.getElementById("mybtn");
-  const handler = (event) => {
-    console.log('mybtn');
-    console.log(event.eventPhase);
-  };
-  btn.addEventListener("click", handler, false);
 
   // btn.removeEventListener("click", handler, false)
 };
