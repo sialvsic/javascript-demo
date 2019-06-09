@@ -1,7 +1,6 @@
 class Man {
   constructor(name) {
-    super();
-    this.name = name
+    this.name = name;
   }
 
   getName() {
@@ -11,7 +10,7 @@ class Man {
 
 class Factory {
   static create(name) {
-    return new Man(name)
+    return new Man(name);
   }
 }
 
