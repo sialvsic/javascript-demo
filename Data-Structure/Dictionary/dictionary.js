@@ -39,4 +39,4 @@ Dictionary.prototype.values = function (key) {
   return Object.values(this.item);
 };
 
-
+export default Dictionary;
