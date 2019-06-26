@@ -37,10 +37,12 @@ let a = {
   name: 123,
   job: {
     title: 'dev',
+    company: ['ali', 'baidu', 'toutiao'],
   },
 };
 
 let b = clone(a);
 b.job.title = 'qa';
+b.job.company = { old: 'tencent' };
 console.log(a);
 console.log(b);
