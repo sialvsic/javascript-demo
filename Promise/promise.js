@@ -32,13 +32,12 @@ function _promise(fn) {
 
   try {
     fn(resolve, reject)
-  } catch(e) {
+  } catch (e) {
     reject(e)
   }
 }
 
-_promise.prototype.then = function(onfullfilled, onrejected) {
-  console.log(this.value);
+_promise.prototype.then = function (onfullfilled, onrejected) {
   if(this.state === 'pending') {
     this.resolveCallbacks.push(onfullfilled);
     this.rejectCallbacks.push(onrejected);
