@@ -65,7 +65,6 @@ Subject.prototype.addObserver = function (observer) {
 
 Subject.prototype.removeObserver = function (observer) {
   this.observers.removeIndexAt(this.observers.indexOf(observer, 0));
-
 };
 
 Subject.prototype.notify = function (context) {
