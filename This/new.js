@@ -17,12 +17,4 @@ var a = _new(People);
 var b = _new();
 
 
-function new__(fn, ...args) {
-  let obj = {};
-  Object.setPrototypeOf(obj, fn.prototype);
-  let result = fn();
-
-  return result instanceof Object ? result : obj;
-}
-
 
