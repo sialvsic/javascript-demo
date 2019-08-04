@@ -12,7 +12,6 @@ function create(Con, ...args) {
   return typeof result === 'object' ? result : obj
 }
 
-
 function People(age, height) {
   this.age = age;
   this.height = height;
