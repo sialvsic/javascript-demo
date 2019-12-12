@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="root">
+    this is root
+    <div class="parent">
+        this is parent
+        <div id="children1">this is children 1</div>
+        <div id="children2">this is children 2</div>
+    </div>
+</div>
+
+<script>
+  let nodeCh2 = document.querySelector("#children2");
+  nodeCh2.addEventListener('click', function (event) {
+    console.log('children2 click')
+  });
+
+  let nodeCh1 = document.querySelector("#children1");
+  nodeCh1.addEventListener('click', function (event) {
+    console.log('children1 click');
+    event.stopImmediatePropagation()
+  });
+
+  let nodeCh12 = document.querySelector("#children1");
+  nodeCh12.addEventListener('click', function (event) {
+    console.log('children1 double click')
+  });
+
+  let nodeCh13 = document.querySelector("#children1");
+  nodeCh13.addEventListener('click', function (event) {
+    console.log('children1 triple click')
+  });
+
+  let parentNode = document.querySelector(".parent");
+  parentNode.addEventListener('click', function (event) {
+    console.log('parentNode click')
+  });
+
+  console.log(nodeCh2)
+</script>
+</body>
+</html>

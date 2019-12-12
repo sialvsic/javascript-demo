@@ -1,7 +1,6 @@
 let req = new XMLHttpRequest();
 
 
-
 req.onreadystatechange = function() {
   if(req.readyState === 4 ){
     // do something
